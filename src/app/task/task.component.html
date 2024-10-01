@@ -1,0 +1,6 @@
+<div class="task-item" [class.completed]="task.completed">
+    <input type="checkbox" (click)="completeTask()" [checked]="task.completed">
+    <span>{{ task.title }}</span>
+    <button (click)="deleteTask()">Eliminar</button>
+  </div>
+  
